@@ -3,7 +3,11 @@ import preactLogo from './assets/preact.svg'
 import viteLogo from '/vite.svg'
 import './app.css'
 import ReactGA from 'react-ga4'
-ReactGA.initialize('G-0T4WEENYHC')
+ReactGA.initialize('G-WJYHL63V3M')
+ReactGA.send({
+  hitType: 'pageview',
+  page: window.location.pathname
+})
 export function App() {
   const [count, setCount] = useState(0)
 
